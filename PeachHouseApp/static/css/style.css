@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin-top: 1vw;
+}
+header{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+#logo{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    padding:1vw;
+}
+#logoimg{
+    width: 6vw;
+    height: 6vw;
+}
+#logotxt{
+    padding-left: 2vw;
+    font-family: "Aclonica", sans-serif;
+    font-size: 2.5vw;
+    color:lightpink;
+    text-shadow: 2px 2px lightcoral;
+}
