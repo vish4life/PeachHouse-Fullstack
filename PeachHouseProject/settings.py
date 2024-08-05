@@ -14,7 +14,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-print('printing Base directory: ',BASE_DIR)
+# print('printing Base directory: ',BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -79,12 +79,17 @@ WSGI_APPLICATION = 'PeachHouseProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'capstone_peachhouse',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'USER': 'admin',
+        'PASSWORD': 'password',
+    },
+    'OPTIONS':{
+        'init_command': "SET sql_mode='STRICT_TRANS_TABLE'"
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
