@@ -10,7 +10,7 @@ class Menu(models.Model):
         return self.title
 
 class Booking(models.Model):
-    id=models.SmallIntegerField(primary_key=True,db_index=True)
+    # id=models.SmallIntegerField(primary_key=True,db_index=True)
     name=models.CharField(max_length=255,null=False)
     no_of_guests=models.SmallIntegerField()
     booking_date=models.DateTimeField()
