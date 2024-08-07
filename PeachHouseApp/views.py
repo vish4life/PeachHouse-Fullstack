@@ -1,5 +1,7 @@
+from typing import Any
 from django.shortcuts import render,get_object_or_404
 from rest_framework import generics
+from django.views.generic import TemplateView
 from .serializers import MenuSerializer,BookingSerializer
 from .models import Menu,Booking
 from rest_framework import viewsets,permissions
@@ -9,15 +11,22 @@ deltSuccess= "Deleted successfully"
 deltFailure= "Failed during delete"
 
 # Create your views here.
-def index(request):
+def home(request):
     message="Welcome to Peach House"
     # return HttpResponse(message)
     return render(request,'index.html',{})
 
-class MenuItemView(generics.ListCreateAPIView):
+class MenuItemView(generics.ListCreateAPIView,TemplateView):
+    template_name='menu.html'
     queryset=Menu.objects.all()
     serializer_class=MenuSerializer
     permission_classes=[permissions.IsAuthenticated]
+    # def get_context_data(self, **kwargs):
+    #     context= super().get_context_data(**kwargs)
+    #     context['menu_data']=self.get_queryset()
+    #     return context
+    
+
 
 from rest_framework.response import Response
 from rest_framework import status
@@ -25,7 +34,7 @@ from rest_framework.exceptions import NotFound
 class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
     queryset=Menu.objects.all()
     serializer_class=MenuSerializer
-    permission_classes=[permissions.IsAuthenticated]
+    # permission_classes=[permissions.IsAuthenticated]
     def get_object(self):
         menuid=self.kwargs['pk']
         print(menuid)
@@ -56,4 +65,7 @@ class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
 class BookingViewSet(viewsets.ModelViewSet):
     queryset=Booking.objects.all()
     serializer_class=BookingSerializer
-    permission_classes=[permissions.IsAuthenticated]
+    # permission_classes=[permissions.IsAuthenticated]
+    def get_queryset(self):
+        print('request received as >> ',self.request)
+        return Booking.objects.all()
