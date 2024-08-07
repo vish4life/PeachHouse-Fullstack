@@ -82,7 +82,7 @@ Building the fullstack web application for a imaginary restaurant* "`Peach House
     <td>1</td>
     <td>Does the web application use Django to serve static HTML content?</td>
     <td>HTML of Home page is developed to show that template is getting rendered</td>
-    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/homepage.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/homepage.jpg"/></td>
   </tr>
   <tr>
     <td>2</td>
