@@ -82,52 +82,50 @@ Building the fullstack web application for a imaginary restaurant* "`Peach House
     <td>1</td>
     <td>Does the web application use Django to serve static HTML content?</td>
     <td>HTML of Home page is developed to show that template is getting rendered</td>
-    <td><img src = "https://github.com/vish4life/LittleLemon-FullStack/blob/34ff70b61d483cb5ad0f4aac0d1f7d276bbaefbb/Snapshots/settings.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/homepage.JPG"/></td>
   </tr>
   <tr>
     <td>2</td>
     <td>Has the learner committed the project to a Git repository?</td>
     <td>Project details are in Git hub <a href="https://github.com/vish4life/PeachHouse-Fullstack">GitHub</a></td>
-    <td><img src = "https://github.com/vish4life/LittleLemon-FullStack/blob/34ff70b61d483cb5ad0f4aac0d1f7d276bbaefbb/Snapshots/dbsettings.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/gitHub.JPG"/></td>
   </tr>
   <tr>
     <td>3</td>
     <td>Does the application connect the backend to a MySQL database?</td>
     <td>Yes, database configuration to MySQL is setup</td>
-    <td><img src = "https://github.com/vish4life/LittleLemon-FullStack/blob/34ff70b61d483cb5ad0f4aac0d1f7d276bbaefbb/Snapshots/migrations.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/mysqldb.JPG"/></td>
   </tr>
   <tr>
     <td>4</td>
     <td>Are the menu and table booking APIs implemented?</td>
     <td>Class based and Function based views are coded to implement the API's</td>
-    <td><img src = "https://github.com/vish4life/LittleLemon-FullStack/blob/34ff70b61d483cb5ad0f4aac0d1f7d276bbaefbb/Snapshots/booking1.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/apiview.JPG"/></td>
   </tr>
   <tr>
     <td>5</td>
     <td>Is the application set up with user registration and authentication?</td>
     <td>Djoser library is used for authentication</td>
-    <td><img src = "https://github.com/vish4life/LittleLemon-FullStack/blob/34ff70b61d483cb5ad0f4aac0d1f7d276bbaefbb/Snapshots/dateselector.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/authdetails.JPG"/></td>
   </tr>
   <tr>
     <td>6</td>
     <td>Does the application contain unit tests?</td>
     <td>Yes two unit test cases are written one for each api model</td>
-    <td><img src = "https://github.com/vish4life/LittleLemon-FullStack/blob/34ff70b61d483cb5ad0f4aac0d1f7d276bbaefbb/Snapshots/allreservations.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/unittests.JPG"/></td>
   </tr>
   <tr>
     <td>7</td>
     <td>Can the Booking API be tested with the Insomnia REST client?</td>
     <td>Yes</td>
-    <td><img src = "https://github.com/vish4life/LittleLemon-FullStack/blob/34ff70b61d483cb5ad0f4aac0d1f7d276bbaefbb/Snapshots/noduplicate.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/ins_booking.JPG"/></td>
   </tr>
   <tr>
     <td>8</td>
     <td>Can the Menu API be tested with the Insomnia REST client?</td>
     <td>Yes</td>
-    <td><img src = "https://github.com/vish4life/LittleLemon-FullStack/blob/34ff70b61d483cb5ad0f4aac0d1f7d276bbaefbb/Snapshots/datechangerefresh.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/ins_menu.JPG"/></td>
   </tr>
 </table>
 
 `Note 01: Project name: PeachHouseProject and App name: PeachHouseApp`
-
-`Note 02: Templates provided as the base code needs enhancement to correctly function`
