@@ -112,7 +112,7 @@ Building the fullstack web application for a imaginary restaurant* "`Peach House
     <td>6</td>
     <td>Does the application contain unit tests?</td>
     <td>Yes two unit test cases are written one for each api model</td>
-    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/unittests.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/unittests.jpg"/></td>
   </tr>
   <tr>
     <td>7</td>
@@ -124,7 +124,7 @@ Building the fullstack web application for a imaginary restaurant* "`Peach House
     <td>8</td>
     <td>Can the Menu API be tested with the Insomnia REST client?</td>
     <td>Yes</td>
-    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/8034079c13693c4a8f24f14d990dd6cf912764e3/snapshots/ins_menu.JPG"/></td>
+    <td><img src = "https://github.com/vish4life/PeachHouse-Fullstack/blob/88cde7a0c87a81929a85994c2f614d9599efaf5e/snapshots/ins_menu.JPG"/></td>
   </tr>
 </table>
 
