@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -51,7 +52,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:8000",
+    "http://localhost:8000",
+]
+CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'PeachHouseProject.urls'
 
@@ -135,7 +142,7 @@ USE_TZ = True
 # staticPath=os.path.join(BASE_DIR,'PeachHouseApp\\static\\')
 # print('static path ',staticPath)
 # STATIC_ROOT =''
-STATIC_URL = 'PeachHouseApp/static/'
+STATIC_URL = '/static/'
 STATICFILES_DIR=[
     BASE_DIR,'/PeachHouseApp/static/'
 ]

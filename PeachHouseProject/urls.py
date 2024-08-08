@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import path,include
 from rest_framework.routers import DefaultRouter
 from PeachHouseApp import views
+from django.conf.urls.static import static
+from django.conf import settings
 
 router = DefaultRouter()
 router.register(r'tables',views.BookingViewSet)
@@ -27,4 +29,4 @@ urlpatterns = [
     path('auth/',include('djoser.urls.authtoken')),
     path('ph/',include('PeachHouseApp.urls')),
     path('ph/booking/',include(router.urls))
-]
+] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
