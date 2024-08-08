@@ -1,9 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<h1>Menu</h1>
-{% for item in menu_data %}
-    <p> {{item.title}} </p>
-    <p> {{item.price}} </p>
+<h1 id="menuhead">Peach Specials</h1>
+<article id="menutable">
+{% for item in menu.menu %}
+<section class="menuinfo">
+    <p>{{item.title}}</p>
+    <p>${{item.price}}</p>
+</section>
+<br/>
 {% endfor%}
+<br/><br/>
+</article>
 {% endblock %}

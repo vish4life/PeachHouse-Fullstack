@@ -16,15 +16,16 @@ def home(request):
     # return HttpResponse(message)
     return render(request,'index.html',{})
 
-class MenuItemView(generics.ListCreateAPIView,TemplateView):
-    template_name='menu.html'
+class MenuItemViewAPI(generics.ListCreateAPIView,TemplateView):
     queryset=Menu.objects.all()
     serializer_class=MenuSerializer
-    permission_classes=[permissions.IsAuthenticated]
-    # def get_context_data(self, **kwargs):
-    #     context= super().get_context_data(**kwargs)
-    #     context['menu_data']=self.get_queryset()
-    #     return context
+    # permission_classes=[permissions.IsAuthenticated]
+
+def  MenuItemView(request):
+    if request.method == 'GET':
+        menu = Menu.objects.all()
+        menu_data={"menu":menu}
+        return render(request,'menu.html',{"menu":menu_data})
     
 
 
@@ -66,6 +67,3 @@ class BookingViewSet(viewsets.ModelViewSet):
     queryset=Booking.objects.all()
     serializer_class=BookingSerializer
     # permission_classes=[permissions.IsAuthenticated]
-    def get_queryset(self):
-        print('request received as >> ',self.request)
-        return Booking.objects.all()

@@ -131,3 +131,23 @@ nav {
     bottom:0%;
     width:100%;
 }
+/* menu page styling */
+#menuhead{
+    text-align: center;
+    padding: 2vw;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: blanchedalmond;
+    text-shadow: 2px 2px rgb(252, 87, 111);
+}
+#menutable{
+    margin:auto;
+    width:30vw;
+}
+.menuinfo{
+    display:flex;
+    justify-content: space-between;
+    padding:0.25vw;
+    font-family: "Montserrat Alternates", sans-serif;
+    background-color: rgb(252, 87, 111);
+    color:white;
+}
